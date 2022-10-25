@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Buku</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>Rak buku untuk masa depan yang lebih baik</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>Baca Dulu</li>
+        <li>Selesai Baca</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Tambah buku</h2>
+
+      <form class="form" action="#" id="form">
+        <div class="form-group">
+          <label for="bukuId">ID</label>
+          <input type="number" id="bukuId" name="bukuId">
+        </div>
+
+        <div class="form-group">
+          <label for="bukuTitle">Title</label>
+          <input type="text" id="bukuTitle" name="bukuTitle" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bukuAuthor">Author</label>
+          <input type="text" id="bukuAuthor" name="bukuAuthor" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bukuYear">Year</label>
+          <input type="number" id="bukuYear" name="bukuYear" required>
+        </div>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="bukuIsComplete" name="bukuIsComplete">
+          <label for="bukuIsComplete"> Selesai Baca</label>
+        </div>
+        
+        <input type="submit" value="Submit" name="Submit">
+      </form>
+    </div>
+
+    <div class="flex-container">
+      <article class="card">
+        <h2>Rak selesai dibaca</h2>
+        <div id="completed-read">
+
+        </div>
+      </article>
+      <article class="card">
+        <h2>Rak belum selesai dibaca</h2>
+        <div id="uncompleted-read">
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by Efraim Wijaya </p>
+  </footer>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

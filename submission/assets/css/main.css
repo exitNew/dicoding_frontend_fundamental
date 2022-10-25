@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-size: 1.5em;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: #525252;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+nav li{
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+nav li:hover{
+  font-weight: 900;
+}
+
+main {
+  overflow: auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: #2e2e2e;
+
+  padding: 20px;
+  margin: 0 auto;
+
+  text-align: center;
+  color: white;
+}
+
+.jumbotron {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(0 , 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-checkbox {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input[type=text], input[type=number] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input[type=text]:focus {
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+input[type=checkbox] {
+  display: inline;
+}
+
+.book-title p {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.book-additional {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-additional p {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.inner {
+  box-shadow: 0px 4px 8px 0px rgba(0 , 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.trash-button {
+  background: url("../images/delete.png");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.switch-button {
+  background: url("../images/switch.png");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: none;
+}
